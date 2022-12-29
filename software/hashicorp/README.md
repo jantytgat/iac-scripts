@@ -5,4 +5,4 @@
 
 ## Install software
 ### Terraform
-`sh terraform/apt-install`
+`sh terraform/apt-install.sh`
