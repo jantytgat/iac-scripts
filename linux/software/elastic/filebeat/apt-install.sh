@@ -4,8 +4,8 @@ echo "LINUX - SOFTWARE - ELASTIC - FILEBEAT - Install"
 echo "########################################################################"
 
 echo "### Install filebeat"
-apt-get update
-apt-get install filebeat -y
+apt update
+apt install filebeat -y
 
 echo "### Enable filebeat in systemd"
 systemctl enable filebeat

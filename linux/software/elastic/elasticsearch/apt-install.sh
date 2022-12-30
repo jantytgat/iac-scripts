@@ -5,8 +5,8 @@ echo "########################################################################"
 echo "#                                                                      #"
 
 echo "### Install elasticsearch"
-apt-get update
-apt-get install elasticsearch -y
+apt update
+apt install elasticsearch -y
 
 echo "### Enable elasticsearch in systemd"
 systemctl enable elasticsearch

@@ -4,8 +4,8 @@ echo "LINUX - SOFTWARE - ELASTIC - AUDITBEAT - Install"
 echo "########################################################################"
 
 echo "### Install auditbeat"
-apt-get update
-apt-get install auditbeat -y
+apt update
+apt install auditbeat -y
 
 
 echo "### Enable auditbeat in systemd"

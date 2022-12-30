@@ -4,8 +4,8 @@ echo "LINUX - SOFTWARE - ELASTIC - LOGSTASH - Install"
 echo "########################################################################"
 
 echo "### Install logstash"
-apt-get update
-apt-get install logstash -y
+apt update
+apt install logstash -y
 
 echo "### Enable logstash in systemd"
 systemctl enable logstash

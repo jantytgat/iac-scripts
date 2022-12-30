@@ -4,7 +4,7 @@ echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - APT update"
 echo "########################################################################"
 
 
-echo "### Run apt-get update"
+echo "### Run apt update"
 apt update
 
 
