@@ -1,0 +1,17 @@
+[Unit]
+Description=Starts the OpenFortiVPN client
+After=network.target
+Wants=network-online.target
+
+
+
+[Service]
+Restart=always
+Type=simple
+ExecStart=/usr/bin/openfortivpn
+ExecStop=kill $MAINPID
+
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,12 +1,10 @@
 #!/bin/bash
 echo "########################################################################"
-echo "LINUX - SOFTWARE - FORTINET - OPENFORTIVPN - Install"
+echo "LINUX - SOFTWARE - OPENFORTIVPN - Enable SystemD Service"
 echo "########################################################################"
 
-
-echo "### Install openfortivpn"
-sudo apt install -y openfortivpn
-
+echo "### Enable openfortivpn service"
+systemctl enable openfortivpn.service
 
 echo "########################################################################"
 echo " "
