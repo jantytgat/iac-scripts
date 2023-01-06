@@ -1,3 +1,3 @@
 #!/bin/sh
-sudo apt update
-sudo apt install vault
+sudo apt-get update
+sudo apt-get install vault

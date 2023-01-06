@@ -1,3 +1,3 @@
 #!/bin/sh
-sudo apt update
-sudo apt install 1password-cli
+sudo apt-get update
+sudo apt-get install 1password-cli

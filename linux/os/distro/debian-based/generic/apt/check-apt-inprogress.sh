@@ -1,16 +1,16 @@
 #!/bin/bash
 echo "########################################################################"
-echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - Check if apt is running"
+echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - Check if apt-get is running"
 echo "########################################################################"
 
 
 inProgress=true
 while [ $inProgress = true ]
 do
-    output=$(ps aux | grep apt | grep -i dpkg)
+    output=$(ps aux | grep apt-get | grep -i dpkg)
     
     if [ "$output" ]; then
-        echo "APT is running, sleep for 10 seconds"
+        echo "apt-get is running, sleep for 10 seconds"
         sleep 10s
 
         continue

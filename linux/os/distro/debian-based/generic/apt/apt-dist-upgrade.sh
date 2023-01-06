@@ -1,12 +1,12 @@
 #!/bin/bash
 echo "########################################################################"
-echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - APT dist-upgrade"
+echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - apt-get dist-upgrade"
 echo "########################################################################"
 
 
-echo "### Run apt dist-upgrade"
-apt update
-apt dist-upgrade -y -q
+echo "### Run apt-get dist-upgrade"
+apt-get update
+apt-get dist-upgrade -y -q
 
 
 echo "########################################################################"

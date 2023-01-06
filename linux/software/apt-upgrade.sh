@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo apt upgrade
+sudo apt-get upgrade

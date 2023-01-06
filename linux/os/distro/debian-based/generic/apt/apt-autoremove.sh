@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "########################################################################"
-echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - APT autoremove"
+echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - apt-get autoremove"
 echo "########################################################################"
 
 
 echo "Auto-remove unused and clean unused packages"
-apt autoremove -q -y
+apt-get autoremove -q -y
 
 
 echo "########################################################################"

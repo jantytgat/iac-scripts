@@ -4,8 +4,8 @@ echo "LINUX - SOFTWARE - ELASTIC - KIBANA - Install"
 echo "########################################################################"
 
 echo "### Install Kibana"
-apt update
-apt install kibana -y
+apt-get update
+apt-get install kibana -y
 
 echo "### Enable Kibana in systemd"
 systemctl enable kibana

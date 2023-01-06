@@ -5,7 +5,7 @@ echo "########################################################################"
 
 
 echo "### Install openfortivpn"
-sudo apt install -y openfortivpn
+sudo apt-get install -y openfortivpn
 
 
 echo "########################################################################"

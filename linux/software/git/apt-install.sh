@@ -4,8 +4,8 @@ echo "LINUX - SOFTWARE - GIT - Install"
 echo "########################################################################"
 
 
-apt update
-apt install git
+apt-get update
+apt-get install git
 
 
 echo "########################################################################"
