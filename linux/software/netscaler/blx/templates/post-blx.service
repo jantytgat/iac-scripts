@@ -1,0 +1,13 @@
+[Unit]
+Description=Post BLX Host Control
+After=blx-post-start.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/root/.post-blx/environ
+ExecStart=/usr/bin/resolvectl dns blx0 $HOST_DNS_NAMESERVER
+
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
