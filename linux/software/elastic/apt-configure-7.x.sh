@@ -1,15 +1,12 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - SOFTWARE - ELASTIC - GENERAL - REPOSITORY Ubuntu"
-echo "########################################################################"
-
-echo "### Adding apt-get key"
+#!/bin/sh
+echo "### configure repository for elastic"
+echo "### --> add apt-get key"
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add -
 
-echo "### Adding repository to sources.list"
+echo "### --> add repository to /etc/apt/sources.list.d/elastic-7.x.list"
 echo "deb https://artifacts.elastic.co/packages/7.x/apt-get stable main" | tee -a /etc/apt/sources.list.d/elastic-7.x.list
 
+echo "### --> update package list"
 apt-get update
 
-echo "########################################################################"
-echo " "
+echo "### --> DONE <--"

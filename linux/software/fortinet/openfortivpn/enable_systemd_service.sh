@@ -1,10 +1,3 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - SOFTWARE - OPENFORTIVPN - Enable SystemD Service"
-echo "########################################################################"
-
-echo "### Enable openfortivpn service"
+#!/bin/sh
+echo "### enable systemd service for openfortivpn"
 systemctl enable openfortivpn.service
-
-echo "########################################################################"
-echo " "

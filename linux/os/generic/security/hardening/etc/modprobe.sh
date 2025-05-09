@@ -1,10 +1,5 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - OS - GENERIC - HARDENING - MODPROBE"
-echo "########################################################################"
-
-
-echo "### Configuring blacklist"
+#!/bin/sh
+echo "### configure /etc/modprobe.d/blacklist.conf"
 echo '' >> /etc/modprobe.d/blacklist.conf
 echo '### Modprobe hardening' >> /etc/modprobe.d/blacklist.conf
 echo 'install cramfs /bin/false' >> /etc/modprobe.d/blacklist.conf
@@ -18,7 +13,3 @@ echo 'install sctp /bin/false' >> /etc/modprobe.d/blacklist.conf
 echo 'install rds /bin/false' >> /etc/modprobe.d/blacklist.conf
 echo 'install tipc /bin/false' >> /etc/modprobe.d/blacklist.conf
 echo 'install usb-storage /bin/false' >> /etc/modprobe.d/blacklist
-
-
-echo "########################################################################"
-echo " "

@@ -1,12 +1,3 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - OS - GENERIC - HARDENING - IRQ BALANCE"
-echo "########################################################################"
-
-
-echo "### Configuring irqbalance"
+#!/bin/sh
+echo "### configure irqbalance"
 echo 'ENABLED="0"' >> /etc/default/irqbalance
-
-
-echo "########################################################################"
-echo " "

@@ -1,12 +1,3 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - OS - GENERIC - SECURITY - APPARMOR - traceroute"
-echo "########################################################################"
-
-
-echo "### Enforce traceroute"
+#!/bin/sh
+echo "### apparmor - enforce traceroute"
 aa-enforce traceroute
-
-
-echo "########################################################################"
-echo " "

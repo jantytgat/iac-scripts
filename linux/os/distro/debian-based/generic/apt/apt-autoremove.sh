@@ -1,12 +1,3 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - apt-get autoremove"
-echo "########################################################################"
-
-
-echo "Auto-remove unused and clean unused packages"
-apt-get autoremove -q -y
-
-
-echo "########################################################################"
-echo " "
+#!/bin/sh
+echo "### run apt-get autoremove"
+DEBIAN_FRONTEND="noninteractive" apt-get autoremove -q -y

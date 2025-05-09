@@ -1,12 +1,3 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - SOFTWARE - FORTINET - OPENFORTIVPN - Install"
-echo "########################################################################"
-
-
-echo "### Install openfortivpn"
-sudo apt-get install -y openfortivpn
-
-
-echo "########################################################################"
-echo " "
+#!/bin/sh
+echo "### install openfortivpn"
+DEBIAN_FRONTEND="noninteractive" apt-get install -y openfortivpn

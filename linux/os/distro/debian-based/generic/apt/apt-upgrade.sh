@@ -1,13 +1,4 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - OS - DISTRO - DEBIAN-BASED - GENERIC - apt-get upgrade"
-echo "########################################################################"
-
-
-echo "### Run apt-get upgrade"
-apt-get update
-apt-get upgrade -y -q
-
-
-echo "########################################################################"
-echo " "
+#!/bin/sh
+echo "### run apt-get upgrade"
+DEBIAN_FRONTEND="noninteractive" apt-get update
+DEBIAN_FRONTEND="noninteractive" apt-get upgrade -y -q

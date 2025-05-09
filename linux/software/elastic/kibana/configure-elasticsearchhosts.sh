@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "########################################################################"
 echo "LINUX - SOFTWARE - ELASTIC - KIBANA - GENERIC - Set ElasticSearch Hosts"
 echo "########################################################################"

@@ -1,12 +1,3 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - SOFTWARE - GIT - Install"
-echo "########################################################################"
-
-
-apt-get update
-apt-get install git
-
-
-echo "########################################################################"
-echo " "
+#!/bin/sh
+echo "### install git"
+DEBIAN_FRONTEND="noninteractive" apt-get install -y git

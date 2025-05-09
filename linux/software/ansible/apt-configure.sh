@@ -1,11 +1,4 @@
-#!/bin/bash
-echo "########################################################################"
-echo "LINUX - SOFTWARE - ANSIBLE - GENERAL - REPOSITORY Ubuntu"
-echo "########################################################################"
-
-echo "### Adding repository to sources.list"
+#!/bin/sh
+echo "### configure repository for ansible"
 apt-add-repository -y ppa:ansible/ansible
 apt-get update
-
-echo "########################################################################"
-echo " "

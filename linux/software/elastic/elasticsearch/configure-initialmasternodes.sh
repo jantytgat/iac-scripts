@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "########################################################################"
 echo "LINUX - SOFTWARE - ELASTIC - ELASTICSEARCH - GENERIC - Cluster Initial Master Nodes"
 echo "########################################################################"
