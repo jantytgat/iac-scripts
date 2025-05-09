@@ -20,5 +20,5 @@ echo "### --> install netscaler blx"
 tar zxvf /var/blx_install/*tar.gz -C /var/blx_install
 DEBIAN_FRONTEND="noninteractive" apt-get install -q -y "/var/blx_install/blx-deb-${BLX_VERSION}-${BLX_BUILD}/*.deb"
 
-echo "### --> diable systemd service blx.service"
+echo "### --> disable systemd service blx.service"
 systemctl disable blx.service
