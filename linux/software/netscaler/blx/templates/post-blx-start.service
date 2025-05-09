@@ -4,7 +4,7 @@ After=blx-post-start.service
 
 [Service]
 Type=oneshot
-EnvironmentFile=-/root/.post-blx/environ
+EnvironmentFile=-/root/.post-blx-start/environ
 ExecStart=/usr/bin/resolvectl dns blx0 $HOST_DNS_NAMESERVER
 
 StandardOutput=null

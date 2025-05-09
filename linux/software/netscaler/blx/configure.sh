@@ -2,6 +2,7 @@
 echo "### configure netscaler blx"
 echo "### --> configure variables"
 
+TEMPLATE_PATH=$(echo $0 | sed 's/\(.*\)\/configure.sh/\1/')
 BLX_WORKER_PROCESSES=$1
 BLX_IP=$2
 BLX_LICENSE_SERVER=$3
@@ -19,13 +20,13 @@ HOST_DNS_NAMESERVER="$(/usr/bin/resolvectl status | grep "DNS Servers: " | sed -
 echo "### --> configure systemd post-blx-start.service"
 mkdir -p /root/.post-blx-start
 echo "HOST_DNS_NAMESERVER=${HOST_DNS_NAMESERVER}" >> /root/.post-blx-start/environ
-cp /tmp/templates/post-blx.service /usr/lib/systemd/system/.
+cp $TEMPLATE_PATH/templates/post-blx-start.service /usr/lib/systemd/system/.
 systemctl enable post-blx-start.service
 
 cat > /etc/blx/blx.conf<<EOF
 blx-system-config
 {
-        worker-processes: $WORKER_PROCESSES
+        worker-processes: $BLX_WORKER_PROCESSES
         ipaddress: $BLX_IP
         blx-managed-host: 1
         host-ipaddress: $HOST_IP
@@ -45,9 +46,11 @@ cli-cmds
 EOF
 
 echo "### --> enable and start netscaler blx"
-if $BLX_AUTO_ENABLE then
+if $BLX_AUTO_ENABLE 
+then
     systemctl enable blx.service
-    if $BLX_AUTO_START then
+    if $BLX_AUTO_START
+    then
         systemctl start blx.service
     fi
 fi
