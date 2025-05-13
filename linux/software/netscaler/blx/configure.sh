@@ -3,6 +3,12 @@ echo "### configure netscaler blx"
 echo "### --> configure variables"
 
 TEMPLATE_PATH=$(echo $0 | sed 's/\(.*\)\/configure.sh/\1/')
+
+if [ "$0" = $TEMPLATE_PATH]
+then
+        TEMPLATE_PATH="."
+fi
+
 BLX_WORKER_PROCESSES=$1
 BLX_IP=$2
 BLX_LICENSE_SERVER=$3
