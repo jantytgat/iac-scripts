@@ -4,7 +4,7 @@ echo "### --> configure variables"
 
 TEMPLATE_PATH=$(echo $0 | sed 's/\(.*\)\/configure.sh/\1/')
 
-if [ "$0" = "$TEMPLATE_PATH"]
+if [ "$0" = "$TEMPLATE_PATH" ]
 then
         TEMPLATE_PATH="."
 fi
